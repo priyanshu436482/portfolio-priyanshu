@@ -136,7 +136,7 @@ export default function Contact() {
               </div>
               <div>
                 <div className="fw-semibold text-secondary">Email</div>
-                <a href="mailto:patelpinshu4246@gmail.com" className="text-white text-decoration-none">patelpinshu4246@gmail.com</a>
+                <a href="mailto:patelpinshu4246@gmail.com" className="text-decoration-none" style={{ color: 'var(--text)' }}>patelpinshu4246@gmail.com</a>
               </div>
             </div>
             
@@ -146,7 +146,7 @@ export default function Contact() {
               </div>
               <div>
                 <div className="fw-semibold text-secondary">Location</div>
-                <div className="text-white">Kadi, Mehsana, Gujarat</div>
+                <div style={{ color: 'var(--text)' }}>Kadi, Mehsana, Gujarat</div>
               </div>
             </div>
             
@@ -156,7 +156,7 @@ export default function Contact() {
               </div>
               <div>
                 <div className="fw-semibold text-secondary">Phone</div>
-                <a href="tel:+918780165043" className="text-white text-decoration-none">+91 8780165043</a>
+                <a href="tel:+918780165043" className="text-decoration-none" style={{ color: 'var(--text)' }}>+91 8780165043</a>
               </div>
             </div>
           </div>

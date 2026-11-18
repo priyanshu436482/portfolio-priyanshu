@@ -18,7 +18,8 @@ const projects = [
     img: p1,
     desc: 'A responsive healthcare web application that allows users to browse medicines, view product details, and place orders seamlessly.',
     tech: [FaReact, FaNodeJs, SiMongodb],
-    repo: 'https://github.com/priyanshu436482'
+    repo: 'https://github.com/priyanshu436482',
+    link: 'https://priyanshu436482.github.io/LifeLine-Pharmacy/'
   },
   {
     title: 'BikeValue',
@@ -33,20 +34,6 @@ const projects = [
     desc: 'Landing page with animations and a headless CMS backend.',
     tech: [FaReact],
     repo: 'https://github.com/priyanshu436482'
-  },
-  {
-    title: 'E-Commerce App',
-    img: p1,
-    desc: 'A complete e-commerce solution with cart, checkout and payment integration.',
-    tech: [FaReact, FaNodeJs],
-    repo: 'https://github.com/priyanshu436482/ecommerce-app'
-  },
-  {
-    title: 'Portfolio v2',
-    img: p2,
-    desc: 'A minimalist portfolio design with dark mode and smooth transitions.',
-    tech: [FaReact],
-    repo: 'https://github.com/priyanshu436482/portfolio-v2'
   }
 ]
 
@@ -78,17 +65,29 @@ export default function Projects() {
         >
           {projects.map((p, idx) => (
             <SwiperSlide key={idx}>
-              <div className="glass glow card-neo project-card h-100">
+              <div
+                className="glass glow card-neo project-card h-100"
+                style={{ cursor: 'pointer' }}
+                onClick={() => window.open(p.link || p.repo, '_blank')}
+              >
                 <img src={p.img} alt={p.title} className="w-100" />
                 <div className="p-4 d-flex flex-column h-100">
                   <h5 className="mb-2">{p.title}</h5>
                   <div className="tech-icons mb-3">
                     {p.tech.map((Icon, i) => (
-                      <Icon key={i} className="me-2 text-secondary fs-5" />
+                      <Icon key={i} />
                     ))}
                   </div>
-                  <p className="mb-3 text-white flex-grow-1">{p.desc}</p>
-                  <Button href={p.repo} className="btn-primary-neo w-100" target="_blank">GitHub</Button>
+                  <p className="mb-3 flex-grow-1" style={{ color: 'var(--muted)' }}>{p.desc}</p>
+                  <Button
+                    href={p.repo}
+                    className="btn-primary-neo w-100 mt-auto"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    GitHub
+                  </Button>
                 </div>
               </div>
             </SwiperSlide>

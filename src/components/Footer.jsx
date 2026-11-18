@@ -16,8 +16,8 @@ export default function Footer() {
             <FaEnvelope />
           </a>
         </div>
-        <p className="text-muted mb-0">
-          &copy; {new Date().getFullYear()} My Portfolio. All rights reserved.
+        <p className="mb-0" style={{ color: 'var(--muted)' }}>
+          &copy; {new Date().getFullYear()} Priyanshu Patel. All rights reserved.
         </p>
       </div>
     </footer>

@@ -11,21 +11,13 @@ function App() {
   return (
     <div className="portfolio-app">
       <Navbar />
-      <div id="home">
+      <main>
         <Hero />
-      </div>
-      <div id="about">
         <About />
-      </div>
-      <div id="skills">
         <Skills />
-      </div>
-      <div id="projects">
         <Projects />
-      </div>
-      <div id="contact">
         <Contact />
-      </div>
+      </main>
       <Footer />
     </div>
   )

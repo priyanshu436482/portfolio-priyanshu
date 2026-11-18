@@ -1,11 +1,11 @@
 import React from 'react'
-import { Container, Button } from 'react-bootstrap'
+import { Button } from 'react-bootstrap'
 import profile from '../assets/images/profile.png'
 import cvFile from '../../data/Patel_Priyanshu_Resume (1).pdf'
 
 export default function Hero() {
   return (
-    <div className="section">
+    <div className="section" id="home">
       <div className="container-narrow">
         <div className="hero">
           <div className="hero-content">
@@ -13,19 +13,18 @@ export default function Hero() {
               Hello, I'm PRIYANSHU
             </div>
             <h1 className="hero-title gradient-text">Full Stack Developer</h1>
-            <p className="hero-description mb-4 text-white fs-5">
-              Passionate developer specializing in building exceptional digital experiences. 
+            <p className="hero-description mb-4 fs-5" style={{ color: 'var(--muted)' }}>
+              Passionate developer specializing in building exceptional digital experiences.
               I love working with modern technologies to solve complex problems.
             </p>
-            <div className="d-flex gap-3">
+            <div className="d-flex gap-3 flex-wrap justify-content-center justify-content-lg-start">
               <Button href={cvFile} download="Patel_Priyanshu_Resume.pdf" className="btn-primary-neo">Download CV</Button>
               <Button href="#contact" className="btn-outline-neo">Contact Me</Button>
-
             </div>
           </div>
           <div className="hero-img-container">
             <div className="hero-profile-card glass glow">
-              <img src={profile} alt="Profile" />
+              <img src={profile} alt="Priyanshu Patel" />
             </div>
           </div>
         </div>
