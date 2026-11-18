@@ -1,0 +1,19 @@
+# dependencies
+node_modules/
+
+# build / cache
+.vite/
+*.local
+
+# logs / env
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env
+.env.*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
